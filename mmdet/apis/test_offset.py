@@ -9,8 +9,8 @@ import torch
 import torch.distributed as dist
 from mmcv.runner import get_dist_info
 
-from mmdet.core import encode_mask_results, tensor2imgs
-
+from mmdet.core import encode_mask_results
+from mmcv.image import tensor2imgs
 
 def single_gpu_test_offset(model,
                     data_loader,

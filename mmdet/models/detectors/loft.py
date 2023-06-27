@@ -6,7 +6,7 @@ import math
 import os
 
 from ..builder import DETECTORS
-from .two_stage import TwoStageDetector
+from .two_stage_offset import TwoStageDetector
 
 
 @DETECTORS.register_module()

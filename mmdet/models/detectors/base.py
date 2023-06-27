@@ -9,7 +9,7 @@ import torch.distributed as dist
 from mmcv.runner import BaseModule, auto_fp16
 
 from mmdet.core.visualization import imshow_det_bboxes
-
+from mmdet.utils import get_root_logger
 
 class BaseDetector(BaseModule, metaclass=ABCMeta):
     """Base class for detectors."""
@@ -363,3 +363,13 @@ class BaseDetector(BaseModule, metaclass=ABCMeta):
     def onnx_export(self, img, img_metas):
         raise NotImplementedError(f'{self.__class__.__name__} does '
                                   f'not support ONNX EXPORT')
+    def init_weights(self, pretrained=None):
+        """Initialize the weights in detector.
+
+        Args:
+            pretrained (str, optional): Path to pre-trained weights.
+                Defaults to None.
+        """
+        if pretrained is not None:
+            logger = get_root_logger()
+            print(f'load model from: {pretrained}')

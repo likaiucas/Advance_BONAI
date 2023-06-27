@@ -8,5 +8,6 @@ lr_config = dict(
     warmup_iters=1000,
     warmup_ratio=0.00049/1000,
     step=[16, 22, 28])
-total_epochs = 32
+# total_epochs = 32
+runner = dict(type='EpochBasedRunner', max_epochs=32)
 # fp16 = dict(loss_scale=512.)
