@@ -23,7 +23,7 @@ RUN pip install --no-cache-dir mmcv-full==1.3.17 -f https://download.openmmlab.c
 # Install MMDetection
 RUN conda clean --all
 RUN git clone https://github.com/likaiucas/Advance_BONAI.git /Advance_BONAI
-WORKDIR /mmdetection
+WORKDIR /Advance_BONAI
 ENV FORCE_CUDA="1"
 RUN pip install --no-cache-dir -r requirements/build.txt
 RUN pip install --no-cache-dir -e .
