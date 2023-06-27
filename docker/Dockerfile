@@ -19,7 +19,9 @@ RUN apt-get update && apt-get install -y ffmpeg libsm6 libxext6 git ninja-build 
 # Install MMCV
 RUN pip install --no-cache-dir --upgrade pip wheel setuptools
 RUN pip install --no-cache-dir mmcv-full==1.3.17 -f https://download.openmmlab.com/mmcv/dist/cu101/torch1.6.0/index.html
-
+RUN apt install vim -y
+RUN apt install openssh-server -y
+RUN apt install screen -y
 # Install MMDetection
 RUN conda clean --all
 RUN git clone https://github.com/likaiucas/Advance_BONAI.git /Advance_BONAI
