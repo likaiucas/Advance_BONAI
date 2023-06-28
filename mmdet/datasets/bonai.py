@@ -13,7 +13,7 @@ from .builder import DATASETS
 
 @DATASETS.register_module()
 class BONAI(CocoDataset):
-    CLASSES = ('building')
+    CLASSES = ('building',)
     def __init__(self,
                 ann_file,
                 pipeline,

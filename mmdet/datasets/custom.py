@@ -174,7 +174,8 @@ class CustomDataset(Dataset):
         results['bbox_fields'] = []
         results['mask_fields'] = []
         results['seg_fields'] = []
-
+        results['offset_fields'] = []
+        results['rbbox_fields'] = []
     def _filter_imgs(self, min_size=32):
         """Filter images too small."""
         if self.filter_empty_gt:
