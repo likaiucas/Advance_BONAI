@@ -15,14 +15,17 @@ if this repo is valuable, please consider to cite:
   number={},
   pages={1-1},
   doi={10.1109/TPAMI.2022.3162583}}
-@misc{obm,
-      title={Prompt-Driven Building Footprint Extraction in Aerial Images with Offset-Building Model}, 
-      author={Kai Li and Yupeng Deng and Yunlong Kong and Diyou Liu and Jingbo Chen and Yu Meng and Junxian Ma},
-      year={2024},
-      eprint={2310.16717},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV},
-      url={https://arxiv.org/abs/2310.16717}, 
-}
+
+@ARTICLE{obm,
+  author={Li, Kai and Deng, Yupeng and Kong, Yunlong and Liu, Diyou and Chen, Jingbo and Meng, Yu and Ma, Junxian and Wang, Chenhao},
+  journal={IEEE Transactions on Geoscience and Remote Sensing}, 
+  title={Prompt-Driven Building Footprint Extraction in Aerial Images with Offset-Building Model}, 
+  year={2024},
+  volume={},
+  number={},
+  pages={1-1},
+  keywords={Buildings;Prediction algorithms;Production;Data models;Data mining;Remote sensing;Instance segmentation;Feature extraction;Training;Three-dimensional displays;Building footprint extraction;Roof segmentation;Roof-to-footprint offset extraction;Segment Anything Model (SAM);Non-Maximum Suppression(NMS)},
+  doi={10.1109/TGRS.2024.3487652}}
+
 
 ```
